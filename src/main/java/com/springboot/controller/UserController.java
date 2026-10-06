@@ -31,7 +31,7 @@ public class UserController {
 
 	}
 
-	@GetMapping("/{id}")
+	@GetMapping("/path/{id}")
 	public Optional<User> pathVariablle(@PathVariable(name = "id") int id) {
 		System.out.println("UserController.pathVariablle : " + id);
 		return userRepository.findById(id);
